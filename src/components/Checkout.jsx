@@ -33,7 +33,7 @@ function Paypal() {
                             }} 
                             createOrder={async () => {
                                 try {
-                                    const response = await fetch("http://localhost:8080/api/orders", {
+                                    const response = await fetch("http://localhost:8080/api/orders", { // local api
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json",
