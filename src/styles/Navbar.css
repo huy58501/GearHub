@@ -1,0 +1,78 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2rem;
+    color: #333;
+    position: relative;
+  }
+  
+  .navbar-left-placeholder {
+    flex: 1;
+  }
+  
+  .navbar-center {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-brand-img img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .navbar-brand-name {
+    font-size: 2rem;
+    color: #000080;
+    margin-left: 0.5rem;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar-icons a {
+    color: #333;
+    font-size: 1.5rem;
+  }
+
+  .cart-icon {
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    border: 1px solid #fff;
+    right: -5px;
+    padding: 2px 6px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: .8rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #d64615;
+  }
+  .cart-icon {
+    background-color: white;
+    border: none;
+    cursor: pointer; /* Add this to show pointer on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-brand-name {
+      font-size: 1.5rem;
+    }
+    
+    .navbar-icons a {
+      font-size: 1.2rem;
+    }
+  }
+  

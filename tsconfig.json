@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es6", // or your desired ECMAScript target
+      "module": "commonjs", // or "esnext", depending on your project setup
+      "strict": true, // this enables strict type-checking options
+      "esModuleInterop": true, // Enable compatibility with CommonJS
+      "jsx": "react", // Add this line to support JSX
+      "skipLibCheck": true, // Optional, speeds up compilation by skipping type checking of declaration files
+      "forceConsistentCasingInFileNames": true // Optional, helps avoid case-sensitivity issues
+    },
+    "include": ["src/**/*"]
+  }
+  

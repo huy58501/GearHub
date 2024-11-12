@@ -1,0 +1,115 @@
+/* src/Products.css */
+.product-container{
+    padding: 0 5%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic column layout */
+    gap: 10px; /* Space between items */
+    width: 100%; /* Ensure the grid takes up the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.product-card {
+    margin: 0;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Height adjusts automatically */
+    max-height: 200px; /* Set a max height to maintain a uniform look */
+    object-fit: contain; /* Ensures the image scales proportionally */
+    border-radius: 4px;
+    background-color: transparent;
+    transition: transform 0.2s;
+}
+
+.p-splitter {
+    border: none;
+    padding: 1em 1em 0 1em;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.p-splitter .p-splitter-gutter {
+    margin-left: 1em;
+}
+.add-to-cart-button{
+    justify-content: center;
+    border: 1px solid gray;
+    background-color: white;
+    color: grey;
+}
+.add-to-cart-button:hover{
+    background-color: #D54300;
+    color: white;
+    cursor: pointer; /* Add this to show pointer on hover */
+}
+
+.p-splitter-horizontal > .p-splitter-gutter > .p-splitter-gutter-handle{
+    display: none;
+}
+
+.panel-left{
+    margin-left: 0.5em;
+    line-height: 1.5;
+}
+
+.panel-left label{
+    margin-left: 0.5em;
+}
+
+.panel-left-text{
+    margin-top: 0.2em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .product-card h3 {
+        font-size: 1.2rem; /* Adjust as needed */
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .product-container{
+        padding: 0 1%;
+    }
+    .product-card h3 {
+        font-size: 1rem; /* Smaller font size */
+    }
+    .p-splitter .p-splitter-gutter{
+        display: none;
+    }
+    .product-grid{
+        gap: 0;
+    }
+    .panel-left{
+        size: 0;
+        display: none;
+    }
+    .panel-right{
+        size: 100;
+    }
+    .product-card h3 {
+        font-size: 90%;
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 450px) {
+    .product-card h3 {
+        font-size: 0.8rem; /* Even smaller font size */
+    }
+    .p-splitter {
+        border: none;
+        padding: 1em 0;
+    }
+}
+
