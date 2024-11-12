@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Checkout from './compoments/Checkout.jsx';  // Import Checkout Component
-import Products from './compoments/Products.js';
+import Products from './components/Products';
 
 const App: React.FC = () => {
   return (
