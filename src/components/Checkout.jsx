@@ -17,7 +17,7 @@ function Paypal() {
         components: "buttons",
         "data-sdk-integration-source": "developer-studio",
     };
-
+    console.log(initialOptions["client-id"]);
     const [message, setMessage] = useState("");
     return (
         <div className="App" style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh"}}>
