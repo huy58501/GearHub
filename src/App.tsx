@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Checkout from './compoments/Checkout.jsx';  // Import Checkout Component
+// @ts-ignore
+import Checkout from './components/Checkout'; // Import Checkout Component
 import Products from './components/Products';
 
 const App: React.FC = () => {
