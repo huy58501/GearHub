@@ -19,7 +19,6 @@ function Paypal() {
     };
 
     const [message, setMessage] = useState("");
-    console.log(process.env.REACT_APP_PAYPAL_CLIENT_ID);
     return (
         <div className="App" style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh"}}>
             <PayPalScriptProvider options={initialOptions}>
