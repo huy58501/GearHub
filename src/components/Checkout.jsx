@@ -11,7 +11,6 @@ function Paypal() {
         "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID,
         "enable-funding": "venmo",
         "disable-funding": "",
-        "buyer-country": "CA",
         currency: "CAD",
         "data-page-type": "product-details",
         components: "buttons",
