@@ -48,8 +48,10 @@ function Paypal() {
                                             ],
                                         }),
                                     });
-
                                     const orderData = await response.json();
+                                    console.log("response : " + response);
+                                    console.log("cart : " + cartItems);
+                                    console.log("orderData : " + orderData);
 
                                     if (orderData.id) {
                                         return orderData.id;
