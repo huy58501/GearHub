@@ -32,7 +32,7 @@ function Paypal() {
                             }} 
                             createOrder={async () => {
                                 try {
-                                    const response = await fetch("http://paypal-h4fve7gygzc2ddg5.canadaeast-01.azurewebsites.net/api/orders", {
+                                    const response = await fetch("https://paypal-h4fve7gygzc2ddg5.canadaeast-01.azurewebsites.net/api/orders", {
                                         method: "POST",
                                         headers: {
                                             "Content-Type": "application/json",
@@ -71,7 +71,7 @@ function Paypal() {
                             onApprove={async (data, actions) => {
                                 try {
                                     const response = await fetch(
-                                        `http://paypal-h4fve7gygzc2ddg5.canadaeast-01.azurewebsites.net/api/orders/${data.orderID}/capture`,
+                                        `https://paypal-h4fve7gygzc2ddg5.canadaeast-01.azurewebsites.net/api/orders/${data.orderID}/capture`,
                                         {
                                             method: "POST",
                                             headers: {
