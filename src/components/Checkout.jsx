@@ -49,8 +49,9 @@ function Paypal() {
                                         }),
                                     });
                                     const orderData = await response.json();
-                                    console.log("response : " + response);
-                                    console.log("orderData : " + orderData);
+                                    console.log("response status:", response.status);
+                                    console.log("orderData:", JSON.stringify(orderData, null, 2));
+
 
                                     if (orderData.id) {
                                         return orderData.id;
